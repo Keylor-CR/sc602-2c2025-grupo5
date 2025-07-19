@@ -1,0 +1,21 @@
+CREATE TABLE dbo.stage_fact_sales_transactions (
+    Invoice_ID       NVARCHAR(50)     NOT NULL,
+    Line             INT              NOT NULL,
+    Customer_ID      INT              NOT NULL,
+    Product_ID       INT              NOT NULL,
+    Store_ID         INT              NOT NULL,
+    Employee_ID      INT              NOT NULL,
+    Date_ID          INT              NOT NULL,
+    Datetime         DATETIME2        NOT NULL,
+    Size             NVARCHAR(10)     NULL,
+    Color            NVARCHAR(20)     NULL,
+    Unit_Price       DECIMAL(18,2)    NOT NULL,
+    Quantity         INT              NOT NULL,
+    Discount         DECIMAL(8,2)     NOT NULL,
+    Line_Total       DECIMAL(18,2)    NOT NULL,
+    SKU              NVARCHAR(30)     NOT NULL,
+    Currency         NVARCHAR(5)      NOT NULL,
+    Currency_Symbol  NVARCHAR(5)      NOT NULL,
+    Transaction_Type NVARCHAR(20)     NOT NULL,
+    Payment_Type     NVARCHAR(20)     NOT NULL
+);
